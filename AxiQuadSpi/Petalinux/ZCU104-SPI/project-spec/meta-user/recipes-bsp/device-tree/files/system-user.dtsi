@@ -1,0 +1,18 @@
+/include/ "system-conf.dtsi"
+/ {
+	model = "ZCU-104 Dan's SPI";
+};
+
+&axi_quad_spi_0 {
+	is-decoded-cs = <0>;
+	status = "okay";
+
+	spidev@0 {
+		status = "okay";
+		compatible = "rohm,dh2228fv";
+		spi-max-frequency = <1000000>;
+		reg = <0>;
+	};
+};
+
+/*#include "zcu104-revc.dtsi";*/
