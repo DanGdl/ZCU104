@@ -15,4 +15,4 @@
 	};
 };
 
-/*#include "zcu104-revc.dtsi";*/
+#include "zcu104-revc.dtsi"; 
