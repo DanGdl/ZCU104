@@ -1,0 +1,18 @@
+/include/ "system-conf.dtsi"
+/ {
+	model = "ZynqMP ZCU104 RevC Dan's DMA";
+
+	amba_pl@0 {
+		dma@a0000000 {
+			compatible = "dgd-axi-dma-1.00.a";
+		};
+	};
+};
+
+/* option 2?
+&axi_dma_0 {
+	compatible = "dgd-axi-dma-1.00.a";
+};
+*/
+
+#include "zcu104-revc.dtsi";
